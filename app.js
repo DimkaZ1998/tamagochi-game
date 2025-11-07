@@ -20,3 +20,30 @@ while(true){
 4. Выход`;
 
 }
+
+let choice = Number (prompt(menu)); 
+
+switch (choice){
+    case 1:
+        alert('питомец "${name}" поел.');
+        hunger -= 12;
+        happiness -= 5;
+        health += 3;
+        break;
+    case 2:
+        alert('питомец "${name}" поиграл');
+        happiness +=7;
+        hunger +=10;
+        health +=2;
+        break;
+    case 3:
+        alert('питомец "${name}" поспал');
+        happiness +=6;
+        hunger +=7;
+        health +=4;
+        break;
+        default:
+            alert("ошибка: неверно выбран номердействий");
+
+
+}
